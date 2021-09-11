@@ -32,6 +32,8 @@ jobs:
         run: |
           git clone -b deploy https://oauth2:$ACCESS_TOKEN@github.com/besunbesky/besunbesky.github.io.git pushDir
           cd pushDir
+          shopt -s extglob
+          rm -rf !(README.md)
           mv ../docs/* ./
           git config --global user.email "1792944345@qq.com"
           git config --global user.name "richard"
