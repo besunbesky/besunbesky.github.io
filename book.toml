@@ -1,0 +1,17 @@
+[book]
+authors = ["Richard"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+title = "bsunbsky"
+
+[rust]
+edition = "2018"
+
+[build]
+create-missing = false
+
+[output.html]
+mathjax-support = true
+no-section-label = false
+copy-fonts = false
